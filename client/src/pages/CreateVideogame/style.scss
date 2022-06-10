@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "counter-strike";
+  src: local("MyFont"), url(../../assets/fonts/cs_regular.ttf) format("woff");
+}
+
+.createVideoGame {
+  width: 100vw;
+  font-family: "mulish", sans-serif;
+  overflow-y:hidden;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 5vh;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  z-index: -1;
+
+  .createVideoGame__imageMario {
+    position: absolute;
+    top:450px;
+    right: -2%;
+    z-index: 9;
+    width: 17%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .createVideoGame__imageLuigi {
+    position: absolute;
+    top:450px;
+    left: 2%;
+    z-index: 9;
+    width: 15%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .createVideoGame__image {
+    position: absolute;
+  }
+
+  .createVideoGame__container {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: grid;
+    max-width: 750px;
+    z-index: -1;
+    grid-template-rows: 0.2fr 1.3fr;
+
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:vertical {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(14, 57, 167, 0.75);
+      border-radius: 20px;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .createVideogame__title {
+      width: 100%;
+      height: 80px;
+      h1 {
+        font-family: "counter-strike";
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+
+    .createVideogame__form {
+      display: grid;
+      grid-template-rows: 1fr 80px;
+
+      .rows {
+        padding: 0 2%;
+        height: 100%;
+        z-index: 10;
+        .createVideogame__form__row {
+          width: 85%;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          margin: 0 auto;
+
+          .messageInput.error {
+            color: red;
+          }
+
+          .messageInput {
+            position: absolute;
+            top: 32px;
+            left: 0;
+            font-weight: 700;
+            font-size: 14px;
+            color: #316afe;
+          }
+
+          .messageSelect {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            color: #316afe;
+          }
+
+          .messageSelect.error {
+            color: red;
+          }
+
+          .container_select-selection {
+            width: 100%;
+            margin-top: -1%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            box-sizing: border-box;
+            
+            div{
+              width: 30%;
+              p {
+                width: 60px;
+                line-height: 1;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                padding: 5px;
+                border: 2px solid #316afe;
+                height: 10px;
+                border-radius: 5px;
+                position: relative;
+                z-index: 10;
+                margin: 5px 15px;
+  
+                button {
+                  border: none;
+                  width: 20px;
+                  font-size: 9px;
+                  font-weight: 900;
+                  height: 20px;
+                  border-radius: 50%;
+                  background-color: #316afe;
+                  color: #ffffff;
+                  cursor: pointer;
+                  position: absolute;
+                  top: -10px;
+                  right: -14px;
+                }
+              }
+            }
+          }
+          .conatiner-selectionGenres{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .container_selection {
+            width: 330px;
+            position: relative;
+            margin: 0 10px;
+            .h4 {
+              font-family: "mulish", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              position: absolute;
+              color: #ffffff;
+              left: -100px;
+              right: 0;
+              top: 6px;
+              transition: all 0.2s ease-in-out;
+              z-index: 100;
+              cursor: pointer;
+            }
+
+            .h4.activate {
+              transform: translate(-20px, -20px);
+              font-size: 12px;
+              color: rgb(160, 160, 165);
+            }
+          }
+          .messageInput.textArea {
+            top: 115px;
+            left: -10px;
+          }
+        }
+      }
+
+      .createVideogame__form__button {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 0;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        
+        .button {
+          margin-top: 15px;
+          width: 40%;
+          height: 40px;
+          border-radius: 10px;
+          max-width: 200px;
+          margin: 0 10px;
+          font-size: 1rem;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          transition: all 0.3s ease linear;
+          cursor: pointer;
+          
+          &:focus {
+            border: none;
+            outline: none;
+          }
+          .content-button {
+            //a and span
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+          }
+        }
+
+        .v1 {
+          border: 0;
+          background: rgb(49, 106, 254);
+          background: linear-gradient(90deg, rgba(49, 106, 254, 1) 0%, rgba(14, 57, 167, 1) 58%);
+        }
+        .v1.disabled {
+          opacity: 0.5;
+        }
+
+        .v1.enabled {
+          opacity: 1;
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+
+        .v2 {
+          background: none;
+          border: rgb(49, 106, 254) 2px solid;
+          &:hover {
+            border: 0;
+            background: rgb(49, 106, 254);
+            background: linear-gradient(90deg, rgba(49, 106, 254, 1) 0%, rgba(14, 57, 167, 1) 58%);
+          }
+          &:active {
+            transform: scale(0.95);
+          }
+        }
+      }
+    }
+  }
+}
+ @media (max-width:870px) {
+  .container_select-selection{
+    margin-top: 1% !important;
+  }
+  .conatiner-selectionGenres{
+    width: 80% !important;
+  }
+ }
+
+ @media (max-width:550px) {
+  .createVideoGame{
+    padding-top: 40px;
+  }
+ }
+ @media (max-width:500px) {
+  .conatiner-selectionGenres{
+    width: 120% !important;
+  }
+ }
+
+@media (max-width: 960px){
+  .createVideoGame__imageLuigi{
+    display: none;
+  }
+  .createVideoGame__imageMario{
+    display: none;
+  }
+}
+
+@media (max-width:0){
+  .createVideoGame{
+    .createVideoGame__container {
+      height: 100vh;
+    }
+  }
+}
