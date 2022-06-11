@@ -17,7 +17,7 @@ const initialState = {
   genres: [],
   header: {
     text: "",
-    title: "Home",
+    title: "Iniciar Sesion",
   },
   error:{
     

@@ -10,7 +10,7 @@ import "./style.scss";
 
 const Videogame = () => {
   let imgDefaul =
-    "https://holatelcel.com/wp-content/uploads/2020/08/mario-bross-google-game--1280x720.png";
+    "http://2.bp.blogspot.com/-aaPzQuqEH88/UZyyAV705xI/AAAAAAAAAC4/OGLqcPIRkU4/s1600/Descargar-Pac-Man-para-Android.gif";
   const dispatch = useDispatch();
   const { id } = useParams();
   const error = useSelector(state => state.rootReducer.error);

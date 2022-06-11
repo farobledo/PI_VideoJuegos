@@ -3,7 +3,7 @@ import { Routes , Route, Navigate} from 'react-router-dom';
 import './App.css';
 import './helpers/format/normalize.css';
 import Videogames from './pages/Videogames';
-import Background from './assets/img/background.png';
+import Background from './assets/img/video-games.jpg';
 import Videogame from './pages/Videogame';
 import CreateVideogame from './pages/CreateVideogame';
 import LandingPage from './pages/LandingPage/index';

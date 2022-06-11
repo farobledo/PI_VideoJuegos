@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import {
   getVideogameByName,
@@ -10,8 +10,8 @@ import {
 import { resetFilter } from "../../redux/action/actionFilterAndOrder";
 import { resetPagination } from "../../redux/action/actionPagination";
 import { getPageCurrent } from "../../redux/action/actionPagination";
-import videogame from "../../assets/img/video-games.jpg";
-import {formatUpperCase} from '../../helpers/format/formatUpperCase';
+import videogame from "../../assets/img/SuperMarioBros.png";
+import { formatUpperCase } from '../../helpers/format/formatUpperCase';
 import "./styleResponsive.scss";
 
 const Header = () => {
@@ -24,18 +24,18 @@ const Header = () => {
 
   const handleChange = e => {
     let changeText = e.target.value;
-    dispatch(getTextHeader({value:changeText, name: 'text'}));
+    dispatch(getTextHeader({ value: changeText, name: 'text' }));
   };
   const handleSubmit = e => {
     e.preventDefault();
-    if(header.text !== ''){ 
-    dispatch(getError(''));  
-    dispatch(getVideogameByName(formatUpperCase(header.text)));
-    dispatch(getTextHeader({value:'Search', name: 'title'}));
-    dispatch(reset());
-    dispatch(resetFilter());
-    dispatch(resetPagination());
-    dispatch(getPageCurrent(1)); 
+    if (header.text !== '') {
+      dispatch(getError(''));
+      dispatch(getVideogameByName(formatUpperCase(header.text)));
+      dispatch(getTextHeader({ value: 'Search', name: 'title' }));
+      dispatch(reset());
+      dispatch(resetFilter());
+      dispatch(resetPagination());
+      dispatch(getPageCurrent(1));
     }
   };
 
@@ -48,9 +48,9 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <a class="btn btn-black" href="/" role="button"><p className="title">{header.title}</p></a>
       <div className="header__image">
         <img src={videogame} alt="videogame" />
-        <p>{header.title}</p>
       </div>
       <div className="header__formSearch">
         <form onSubmit={handleSubmit}>
@@ -65,11 +65,12 @@ const Header = () => {
             placeholder="Buscar por Nombre...."
           />
           <button type="submit"> Buscar</button>
-          {header.title=== 'Search' && <a href="/home"><span>←</span><p>Volver Home</p></a>}
+          {header.title === 'Search' && <a href="/home"><span>←</span><p>Volver Home</p></a>}
         </form>
       </div>
       <div className="header__perfil"></div>
       <div className="header__autorCreated">
+
         <h6>Full Start Fabian Robledo</h6>
       </div>
     </div>

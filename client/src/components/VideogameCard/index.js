@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './prueba.scss';
 
 const VideoGameCard = props => {
-    let imgDefaul = 'https://www.teahub.io/photos/full/25-253974_kratos-god-of-war-wallpapers-group-19201080-kratos.jpg';
+    let imgDefaul = 'https://c.tenor.com/CB0yRfLw8_gAAAAC/infinity.gif';
     const { videoGame } = props;
     
     return (

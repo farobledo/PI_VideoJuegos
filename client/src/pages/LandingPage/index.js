@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Landing from "../../assets/img/SuperMario.png";
+import Landing from "../../assets/img/videogame.png";
 import "./style.scss";
 
 const LandingPage2 = props => {
