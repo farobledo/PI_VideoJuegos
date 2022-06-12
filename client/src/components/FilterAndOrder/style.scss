@@ -20,7 +20,7 @@
   .h4.activate {
     transform: translate(0px, -20px);
     font-size: 12px;
-    color: rgb(160, 160, 165);
+    color: rgb(255, 255, 255);
   } 
 }
 
@@ -104,11 +104,11 @@
       z-index: 99999;
       border: none;
       color: #ffffff;
-      background: rgb(49, 106, 254);
+      background: rgb(255, 0, 0);
           background: linear-gradient(
             90deg,
-            rgba(49, 106, 254, 1) 0%,
-            rgba(14, 57, 167, 1) 58%
+            rgb(253, 0, 0) 0%,
+            rgb(255, 3, 3) 58%
           );
     }
 

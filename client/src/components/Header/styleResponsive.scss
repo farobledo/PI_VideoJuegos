@@ -42,7 +42,7 @@
         z-index: 9999;
         width: 230px;
         height: 45px;
-        background-color: #316afe;
+        background-color: #ff0000;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -149,7 +149,7 @@
           &:focus {
             border: none;
             outline: none;
-            border: 2px solid rgb(49, 106, 254);
+            border: 2px solid rgb(255, 255, 255);
           }
           &::placeholder{
             opacity: 0;
@@ -173,15 +173,15 @@
           border: none;
           font-size: 1rem;
           color: #ffffff;
-          background: rgb(49, 106, 254);
+          background: rgb(255, 0, 0);
           background: linear-gradient(
             90deg,
-            rgba(49, 106, 254, 1) 0%,
-            rgba(14, 57, 167, 1) 58%
+            rgb(255, 0, 0) 0%,
+            rgb(255, 0, 0) 58%
           );
-          box-shadow: 0px 8px 10px -3px rgba(14, 57, 167, 0.75);
-          -webkit-box-shadow: 0px 8px 10px -3px rgba(14, 57, 167, 0.75);
-          -moz-box-shadow: 0px 8px 10px -3px rgba(14, 57, 167, 0.75);
+          box-shadow: 0px 8px 10px -3px rgba(255, 0, 0, 0.75);
+          -webkit-box-shadow: 0px 8px 10px -3px rgba(255, 0, 0, 0.75);
+          -moz-box-shadow: 0px 8px 10px -3px rgba(255, 0, 0, 0.75);
           outline: none;
           transition: 0.3s ease linear;
           &:focus {

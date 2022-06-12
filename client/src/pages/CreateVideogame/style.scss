@@ -41,7 +41,7 @@
 
   .createVideoGame__container {
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     backdrop-filter: blur(5px);
     display: grid;
@@ -56,7 +56,7 @@
       width: 10px;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: rgba(14, 57, 167, 0.75);
+      background-color: rgba(255, 2, 2, 0.75);
       border-radius: 20px;
       border: 2px solid rgba(0, 0, 0, 0.3);
     }
@@ -72,7 +72,7 @@
         text-align: center;
         font-size: 2.5rem;
         font-weight: 400;
-        color: #fff;
+        color: rgb(249, 249, 249);
       }
     }
 
@@ -101,7 +101,7 @@
             left: 0;
             font-weight: 700;
             font-size: 14px;
-            color: #316afe;
+            color: #fd0000;
           }
 
           .messageSelect {
@@ -110,7 +110,7 @@
             left: 50px;
             font-weight: 700;
             font-size: 14px;
-            color: #316afe;
+            color: #fc0000;
           }
 
           .messageSelect.error {
@@ -134,7 +134,7 @@
                 align-items: center;
                 font-size: 12px;
                 padding: 5px;
-                border: 2px solid #316afe;
+                border: 2px solid #fa0000;
                 height: 10px;
                 border-radius: 5px;
                 position: relative;
@@ -148,8 +148,8 @@
                   font-weight: 900;
                   height: 20px;
                   border-radius: 50%;
-                  background-color: #316afe;
-                  color: #ffffff;
+                  background-color: #fd0000;
+                  color: #000000;
                   cursor: pointer;
                   position: absolute;
                   top: -10px;
@@ -174,7 +174,7 @@
               font-weight: 400;
               font-size: 15px;
               position: absolute;
-              color: #ffffff;
+              color: #000000;
               left: -100px;
               right: 0;
               top: 6px;
@@ -186,7 +186,7 @@
             .h4.activate {
               transform: translate(-20px, -20px);
               font-size: 12px;
-              color: rgb(160, 160, 165);
+              color: rgb(0, 0, 0);
             }
           }
           .messageInput.textArea {
@@ -212,7 +212,7 @@
           max-width: 200px;
           margin: 0 10px;
           font-size: 1rem;
-          color: #ffffff;
+          color: #000000;
           display: flex;
           align-items: center;
           transition: all 0.3s ease linear;
@@ -231,14 +231,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ffffff;
+            color: #000000;
           }
         }
 
         .v1 {
           border: 0;
-          background: rgb(49, 106, 254);
-          background: linear-gradient(90deg, rgba(49, 106, 254, 1) 0%, rgba(14, 57, 167, 1) 58%);
+          background: rgb(255, 0, 0);
+          background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 58%);
         }
         .v1.disabled {
           opacity: 0.5;
@@ -253,11 +253,11 @@
 
         .v2 {
           background: none;
-          border: rgb(49, 106, 254) 2px solid;
+          border: rgb(253, 0, 0) 2px solid;
           &:hover {
             border: 0;
-            background: rgb(49, 106, 254);
-            background: linear-gradient(90deg, rgba(49, 106, 254, 1) 0%, rgba(14, 57, 167, 1) 58%);
+            background: rgb(252, 0, 0);
+            background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 58%);
           }
           &:active {
             transform: scale(0.95);
