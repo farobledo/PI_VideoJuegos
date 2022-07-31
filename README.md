@@ -184,6 +184,6 @@ __IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y pagin
 - [ ] Al menos tener una ruta del backend con sus tests respectivo
 - [ ] Al menos tener un modelo de la base de datos con sus tests respectivos
 
-APIKEY=4985a511711b447eb465ea58f5d0ab73
+
 
 
